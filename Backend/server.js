@@ -10,7 +10,11 @@ require('dotenv').config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: '*', // Or '*' to allow all origins
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
+  credentials: true // If you're sending cookies, set to true
+}));
 app.use(express.json());
 
 // Database Connection

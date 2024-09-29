@@ -1,7 +1,6 @@
+import axios from "axios";
 
-import axios from 'axios';
-
-const API_URL = 'http://localhost:8080/api/questions';
+const API_URL = "https://agrobot-bp38.vercel.app/api/questions";
 
 const getQuestions = () => {
   return axios.get(API_URL);
