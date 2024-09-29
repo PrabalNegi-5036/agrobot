@@ -1,0 +1,111 @@
+/* Admin Panel Container */
+.admin-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fefefe;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.admin-container h2 {
+  font-size: 2.5rem;
+  color: #ff758c;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #f7931e, #ff5273);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.admin-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.admin-container input:focus {
+  border-color: #ff758c;
+  outline: none;
+}
+
+/* Add Button Styling */
+.admin-container button {
+  background-color: #f94f6b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 10px 0;
+}
+
+.admin-container button:hover {
+  background-color: #ff5273;
+  transform: translateY(-3px);
+}
+
+/* Questions List */
+.admin-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.admin-container li span {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.admin-container li button {
+  background-color: #e03a57;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.admin-container li button:hover {
+  background-color: #ff758c;
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .admin-container h2 {
+    font-size: 2rem;
+  }
+
+  .admin-container input, .admin-container button {
+    font-size: 0.9rem;
+  }
+
+  .admin-container li {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

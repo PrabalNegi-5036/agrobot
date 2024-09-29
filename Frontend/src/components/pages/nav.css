@@ -1,0 +1,84 @@
+/* General Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #f7931e, #f94f6b); /* Warm gradient theme */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo Styling */
+  .navbar-logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(90deg, #2b4a02, #bc0826); /* Gradient matching the logo text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Links container */
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  /* Links Styling */
+  .navbar-links a {
+    font-size: 1.1rem;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 6px;
+  }
+  
+  .navbar-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+  }
+  
+  /* Logout button */
+  .logout-button {
+    background-color: #ff758c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #ff5273;
+    transform: translateY(-3px);
+  }
+  
+  /* Mobile Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    .navbar-links a, .logout-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

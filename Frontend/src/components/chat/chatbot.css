@@ -1,0 +1,110 @@
+/* General Chatbot Styles */
+.chat-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fefefe;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.chat-container h2 {
+  font-size: 2.5rem;
+  color: #ff758c;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #f7931e, #ff5273);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Input Field */
+.chat-container input {
+  width: 80%;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.chat-container input:focus {
+  border-color: #ff758c;
+  outline: none;
+}
+
+/* Ask Button */
+.chat-container button {
+  background-color: #f94f6b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.chat-container button:hover {
+  background-color: #ff5273;
+  transform: translateY(-3px);
+}
+
+/* Response Area */
+.response {
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-size: 1.2rem;
+  color: #333;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Questions List */
+.chat-container ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.chat-container li {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.chat-container li strong {
+  color: #ff5273;
+  font-weight: bold;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .chat-container input {
+    width: 100%;
+  }
+
+  .chat-container button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .chat-container ul {
+    padding: 0 15px;
+  }
+
+  .chat-container li {
+    font-size: 0.9rem;
+  }
+}

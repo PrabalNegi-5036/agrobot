@@ -1,0 +1,77 @@
+/* General Auth Container */
+.auth-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title Styling */
+.auth-container h2 {
+  font-size: 2rem;
+  color: #ff758c;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #f7931e, #ff5273);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Input Field Styling */
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* Input Focus Effect */
+.auth-container input:focus {
+  border-color: #ff758c;
+  outline: none;
+}
+
+/* Button Styling */
+.auth-container button {
+  width: 100%;
+  background-color: #f94f6b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+/* Button Hover Effect */
+.auth-container button:hover {
+  background-color: #ff5273;
+  transform: translateY(-3px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .auth-container {
+    margin: 40px auto;
+    padding: 15px;
+  }
+
+  .auth-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .auth-container input {
+    font-size: 0.9rem;
+  }
+
+  .auth-container button {
+    font-size: 0.9rem;
+  }
+}
